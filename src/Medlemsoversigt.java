@@ -4,5 +4,11 @@ public class Medlemsoversigt
 {
     ArrayList<Medlem>  medlemmer;
 
+
     public Medlemsoversigt(){}
+
+    public void addMedlem()
+    {
+        medlemmer.add(new Medlem());
+    }
 }

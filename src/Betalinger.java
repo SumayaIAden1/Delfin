@@ -21,5 +21,5 @@ public class Betalinger
         return rabat;
     }
 
-    
+
 }
