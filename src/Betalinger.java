@@ -1,12 +1,12 @@
 public class Betalinger
 {
-    protected String betalt;
+    protected boolean betalt = true;
     protected Restance restance;
     protected int rabat;
 
     public Betalinger(){}
 
-    public String getBetalt()
+    public boolean getBetalt()
     {
         return betalt;
     }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class MedlemmerPersistens
 {
-    protected ArrayList<Medlem> medlemmer;
+    protected ArrayList<Medlem> medlemmer = new ArrayList<>();
 
     public MedlemmerPersistens() {}
 

@@ -1,16 +1,16 @@
 public abstract class Person
 {
     protected String navn;
-    protected int alder;
+    protected int foedselsdag;
     protected int tlfNr;
     protected String mail;
 
     public Person(){}
 
-    public Person(String navn, int alder, int tlfNr, String mail)
+    public Person(String navn, int foedselsdag, int tlfNr, String mail)
     {
         this.navn = navn;
-        this.alder = alder;
+        this.foedselsdag = foedselsdag;
         this.tlfNr = tlfNr;
         this.mail = mail;
     }
@@ -20,9 +20,9 @@ public abstract class Person
         return navn;
     }
 
-    public int getAlder()
+    public int getFoedselsdag()
     {
-        return alder;
+        return foedselsdag;
     }
 
     public int getTlfNr()

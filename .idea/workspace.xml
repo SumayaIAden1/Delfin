@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e496389b-0db6-4faf-b9a7-cc7afb3a43e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Konkurrence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KonkurrenceOversigt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KonkurrenceResultat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MedlemmerPersistens.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Traener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TraenerPersistens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CprNr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Betalinger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Betalinger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Junior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Medlem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Medlem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Medlemsoversigt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Medlemsoversigt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Medlemsstatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Medlemstype.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MedlemmerPersistens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MedlemmerPersistens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Medlemsoversigt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MedlemsOversigt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Restance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Restance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Senior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -94,7 +88,8 @@
       <workItem from="1732543338785" duration="1231000" />
       <workItem from="1732611285758" duration="5901000" />
       <workItem from="1732703088123" duration="1691000" />
-      <workItem from="1732746860180" duration="748000" />
+      <workItem from="1732746860180" duration="796000" />
+      <workItem from="1732784620307" duration="4018000" />
     </task>
     <servers />
   </component>
