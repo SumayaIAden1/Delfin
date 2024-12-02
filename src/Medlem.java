@@ -1,56 +1,112 @@
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Medlem extends Person
 {
-    ArrayList<Person> person;
-    protected LocalDate dato;
-    protected int medlemsID;
-    protected boolean erAktiv;
 
+    protected LocalDate oprettelsesDato;
+    protected int medlemsId;
+    protected boolean aktivStatus;
+    protected boolean erMotionist;
+    protected Betalinger betalinger;
+    protected boolean erRestance = false;
 
-    public Medlem() {}
-
-    public Medlem(String navn, int foedselsdag, int telNr,String mail, LocalDate dato, int medlemsID)
+    public Medlem(String navn, CPR cpr, int telNr, String mail, LocalDate oprettelsesDato, boolean aktivStatus, boolean erMotionist, int medlemsId, Betalinger betalinger, boolean erRestance)
     {
-        super(navn, foedselsdag,telNr, mail);
-        this.dato = dato;
-        this.medlemsID = medlemsID;
+        super(navn, cpr, telNr, mail);
+        this.oprettelsesDato = oprettelsesDato;
+        this.aktivStatus = aktivStatus;
+        this.erMotionist = erMotionist;
+        this.betalinger = betalinger != null ? betalinger : new Betalinger();
+        this.medlemsId = medlemsId;
+        this.erRestance = erRestance;
     }
 
 
-    public ArrayList<Person> getPerson()
+
+    public int getMedlemsId()
     {
-        return person;
+        return medlemsId;
     }
 
-    public LocalDate getDato()
+    public String getMedlemStatus()
     {
-        return dato;
+        if (aktivStatus == true)
+        {
+            return "Aktiv";
+        } else
+        {
+            return "Passiv";
+        }
     }
 
-    public int getMedlemsID()
+
+    public String getMedlemsType()
     {
-        return medlemsID;
+        if (erMotionist == true)
+        {
+            return "Motionist";
+        } else
+        {
+            return "Konkurrance";
+        }
     }
 
-    public boolean isErAktiv()
+    public int getAlder()
     {
-        return erAktiv;
+        return cpr.getAlder();
     }
+
+    public Betalinger getBetalinger() {
+        return this.betalinger;
+    }
+
+    public String getAlderKatogori()
+    {
+        int alder = cpr.getAlder();
+        if (alder < 18)
+        {
+            return "Junior";
+        } else
+        {
+            return "Senior";
+        }
+    }
+
 
     public String toString()
     {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
-        return "Medlem: " + navn + "\n" +
-                "Fødselsdag: " + foedselsdag + "\n" +
-                "TlfNr: " + tlfNr + "\n" +
-                "Mail: " + mail + "\n" +
-                "Oprettelsesdato: " + dato + "\n" +
-                "MedlemsId: " + medlemsID + "\n"
-                ;
+        int betaling;
+        if (erRestance == true)
+        {
+            betaling = betalinger.udregnRestance(this);
+        } else
+        {
+            betaling = betalinger.udregnBetalinger(this);
+        }
 
+        String result =  "Medlem: " + navn + "\n" +
+                "CPR: " + cpr + "\n" +
+                "Alder: " + cpr.getAlder() + "\n" +
+                "Junior/Senior: " + getAlderKatogori() + "\n" +
+                "TlfNr: " + telNr + "\n" +
+                "Mail: " + mail + "\n" +
+                "Oprettelsesdato: " + oprettelsesDato + "\n" +
+                "Aktiv/Passiv: " + getMedlemStatus() + "\n" +
+                "Motionist/Konkurrance: " + getMedlemsType() + "\n" +
+                "MedlemsId: " + medlemsId + "\n" +
+                "Årlig medlems kontingent: " + betalinger.udregnBetalinger(this) + " DKK" + "\n";
+
+        if(erRestance == true)
+        {
+            result += "Restance og skylder: " + (betaling) + " DKK" + "\n";
+
+        }
+
+        return result;
     }
+
+
 }

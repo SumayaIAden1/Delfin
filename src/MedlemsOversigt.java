@@ -2,54 +2,114 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Random;
 
+
 public class MedlemsOversigt
 {
-    ArrayList<Medlem>  medlemmerOversigt = new ArrayList<>();
+
+    protected ArrayList<Medlem> medlemmerOversigt = new ArrayList<>();
+    protected Restance restance;
 
 
-        public MedlemsOversigt()
+    public MedlemsOversigt()
+    {
+        this.medlemmerOversigt = new ArrayList<>();
+        this.restance = new Restance();  // Create an instance of Restance
+        createMedlemmereOversigt();
+    }
+
+
+    public void createMedlemmereOversigt()
+    {
+        Random random = new Random();
+
+
+
+        for (int i = 1; i <= 250; i++)
         {
-            createMedlemmereOversigt();
-        }
 
 
-        public void createMedlemmereOversigt()
-        {
-            Random random = new Random();
+            String[] drengenavne = {
+                    "Peter", "Søren", "Jens", "Thomas", "Anders", "Frederik", "Christian", "Lars", "Hans", "Ole", "Mikkel", "Jacob", "Benjamin", "Mathias", "Emil", "David", "Victor", "Daniel", "Andreas", "Nicklas", "Simon"
+            };
 
-            for(int i = 0; i <= 200; i++)
+            String[] pigenavne = {
+                    "Anna", "Maria", "Karin", "Mette", "Emma", "Nina", "Camilla", "Louise", "Sofie", "Helle", "Maja", "Lise", "Line", "Katrine", "Helena", "Sarah", "Julie", "Carina", "Laura", "Hanne", "Cecilie"
+            };
+
+            String[] efternavne = {
+                    "Jensen", "Nielsen", "Hansen", "Pedersen", "Andersen", "Christensen", "Sorensen", "Larsen", "Rasmussen", "Madsen", "Poulsen", "Olsen", "Mikkelsen", "Jørgensen", "Kjær", "Johansen", "Berg", "Buch", "Vestergaard", "Knudsen"
+            };
+
+
+            String fornavn;
+            boolean erDreng = random.nextBoolean();
+
+            if (erDreng == true)
             {
-                String navn = "Medlem" + i;
-                int foedselsdag = random.nextInt(100000);
-                int tlfNr = 10000000 + random.nextInt(90000000);
-                String mail = navn.toLowerCase() + "@gmail.com";
-                LocalDate oprettelsesDato = LocalDate.now().minusDays(random.nextInt(365 * 5));
-                int medlemsId = 1000 + i;
-
-                medlemmerOversigt.add(new Medlem(navn, foedselsdag, tlfNr, mail, oprettelsesDato, medlemsId));
-            }
-        }
-
-        public ArrayList<Medlem> getMedlemmerOversigt()
-        {
-            return medlemmerOversigt;
-        }
-
-
-        @Override
-        public String toString() {
-            StringBuilder sb = new StringBuilder();
-            sb.append("Medlemsoversigt:\n");
-
-            if (medlemmerOversigt.isEmpty()) {
-                sb.append("Ingen medlemmer i oversigten.\n");
+                fornavn = drengenavne[random.nextInt(drengenavne.length)];
             } else
-            {
-                for (Medlem medlem : medlemmerOversigt)
-                {
-                    sb.append(medlem.toString()).append("\n");
-                }
-            }
-            return sb.toString();
+                fornavn = pigenavne[random.nextInt(pigenavne.length)];
+
+            String efternavn = efternavne[random.nextInt(efternavne.length)];
+
+            String navn = fornavn + " " + efternavn;
+
+
+            CPR cpr = new CPR(true);
+            int tlfNr = 10000000 + random.nextInt(90000000);
+            String mail = fornavn.toLowerCase() + random.nextInt(22222) +"@gmail.com";
+            LocalDate oprettelsesDato = LocalDate.now().minusDays(random.nextInt(365 * 5));
+            boolean erAktiv = random.nextBoolean();
+            boolean erMotionist = random.nextBoolean();
+            int medlemsId = 1000 + i;
+            boolean restance = random.nextBoolean();
+
+            medlemmerOversigt.add(new Medlem(navn, cpr, tlfNr, mail, oprettelsesDato, erAktiv, erMotionist, medlemsId, new Betalinger(), restance));
         }
+    }
+
+    public ArrayList<Medlem> getMedlemmerOversigt()
+    {
+        return medlemmerOversigt;
+    }
+
+
+    public void addMedlemmerToMedlemmerOversigt(Medlem m)
+    {
+        medlemmerOversigt.add(m);
+    }
+
+    public int getAntalMedlemmere() {
+        return medlemmerOversigt.size();
+    }
+
+
+    public void addAlleMedlemmeretoRestanceList() {
+        for (Medlem m : medlemmerOversigt) {
+            if (m.erRestance) {
+                restance.addMedlemToRestance(m);
+                System.out.println("Added to RestanceListe: " + m.getNavn());
+            }
+        }
+    }
+
+    public Restance getRestance() {
+        return restance;
+    }
+
+
+    @Override
+    public String toString()
+    {
+        StringBuilder sb = new StringBuilder("Medlemmere:\n\n");
+
+        for (int i = 0; i < medlemmerOversigt.size(); i++)
+        {
+            sb.append(medlemmerOversigt.get(i)).append("\n");
+        }
+        return sb.toString();
+    }
+
+
+
 }

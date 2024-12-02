@@ -1,17 +1,18 @@
 public abstract class Person
 {
+
     protected String navn;
-    protected int foedselsdag;
-    protected int tlfNr;
+    // protected int foedselsdag;
+
+    protected CPR cpr;
+    protected int telNr;
     protected String mail;
 
-    public Person(){}
-
-    public Person(String navn, int foedselsdag, int tlfNr, String mail)
+    public Person(String navn, CPR cpr, int telNr, String mail)
     {
         this.navn = navn;
-        this.foedselsdag = foedselsdag;
-        this.tlfNr = tlfNr;
+        this.cpr = cpr;
+        this.telNr = telNr;
         this.mail = mail;
     }
 
@@ -20,18 +21,19 @@ public abstract class Person
         return navn;
     }
 
-    public int getFoedselsdag()
+    public CPR getCpr()
     {
-        return foedselsdag;
+        return cpr;
     }
 
-    public int getTlfNr()
+    public int getTelNr()
     {
-        return tlfNr;
+        return telNr;
     }
 
     public String getMail()
     {
         return mail;
     }
+
 }

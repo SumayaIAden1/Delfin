@@ -1,21 +1,14 @@
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 
 public class Traener extends Person
 {
-    protected ArrayList<Person> traener;
     protected String diciplin;
 
-    public Traener(String navn, int foedselsdag, int telNr, String mail, String diciplin)
+    public Traener(String navn, CPR cpr, int telNr, String mail, String diciplin)
     {
-        super(navn, foedselsdag,telNr, mail);
+        super(navn, cpr,telNr, mail);
         this.diciplin = diciplin;
 
-    }
-
-    public ArrayList<Person> getTraener()
-    {
-        return traener;
     }
 
     public String toString()
@@ -23,10 +16,11 @@ public class Traener extends Person
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
         return "Medlem: " + navn + "\n" +
-                "Fødselsdag: " + foedselsdag + "\n" +
-                "TlfNr: " + tlfNr + "\n" +
+                "Fødselsdag: " + cpr + "\n" +
+                "TlfNr: " + telNr + "\n" +
                 "Mail: " + mail + "\n" +
                 "Diciplin: " + diciplin + "\n"
                 ;
+
     }
 }
