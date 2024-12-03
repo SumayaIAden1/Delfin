@@ -1,8 +1,8 @@
+
 import java.util.ArrayList;
 
 public class Restance
 {
-
 
     private ArrayList<Medlem> restanceListe;
 

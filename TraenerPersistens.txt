@@ -1,0 +1,62 @@
+LISTE OVER TRÆNERE
+
+Navn: Kasper Friis
+CPR: 130583-1273
+Telefonnummer: 56054713
+Mail: kasperfriis@mail.com
+Diciplin: Rygcrawl
+
+Navn: Lotte Friis
+CPR: 150556-5654
+Telefonnummer: 85128706
+Mail: lottefriis@mail.com
+Diciplin: Svømning
+
+Navn: Birgitte Thomsen
+CPR: 181049-6659
+Telefonnummer: 74318836
+Mail: birgittethomsen@mail.com
+Diciplin: Butterfly
+
+Navn: Lotte Jakobsen
+CPR: 160337-7849
+Telefonnummer: 97357753
+Mail: lottejakobsen@mail.com
+Diciplin: Freestyle
+
+Navn: Jonas Bæk
+CPR: 091246-4694
+Telefonnummer: 65519871
+Mail: jonasbæk@mail.com
+Diciplin: Svømning
+
+Navn: Asger Jakobsen
+CPR: 100304-5194
+Telefonnummer: 99295899
+Mail: asgerjakobsen@mail.com
+Diciplin: Butterfly
+
+Navn: Birgitte Petersen
+CPR: 101176-7881
+Telefonnummer: 55501258
+Mail: birgittepetersen@mail.com
+Diciplin: Butterfly
+
+Navn: Asger Hansen
+CPR: 040488-4705
+Telefonnummer: 59339410
+Mail: asgerhansen@mail.com
+Diciplin: Brystsvømning
+
+Navn: Magnus Petersen
+CPR: 191166-6163
+Telefonnummer: 52090182
+Mail: magnuspetersen@mail.com
+Diciplin: Brystsvømning
+
+Navn: Kasper Hansen
+CPR: 120861-1105
+Telefonnummer: 17697449
+Mail: kasperhansen@mail.com
+Diciplin: Brystsvømning
+

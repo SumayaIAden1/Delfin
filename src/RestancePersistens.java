@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class RestancePersistens
@@ -17,7 +18,7 @@ public class RestancePersistens
 
     public void writeRestancePersistens()
     {
-        File restancePersistens = new File("/Users/bruger/Desktop/UNI/1.semester/Programmering/IntelliJ/Delfin/src/RestancePersistens.txt");
+        File restancePersistens = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/Delfin/src/RestancePersistens.txt");
 
         try (FileWriter writer = new FileWriter(restancePersistens, false))
         {

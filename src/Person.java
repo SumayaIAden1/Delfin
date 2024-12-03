@@ -1,39 +1,38 @@
-public abstract class Person
-{
+public abstract class Person {
 
     protected String navn;
-    // protected int foedselsdag;
-
     protected CPR cpr;
     protected int telNr;
     protected String mail;
 
-    public Person(String navn, CPR cpr, int telNr, String mail)
-    {
+    public Person(String navn, CPR cpr, int telNr, String mail) {
         this.navn = navn;
         this.cpr = cpr;
         this.telNr = telNr;
         this.mail = mail;
     }
 
-    public String getNavn()
-    {
+    public String getNavn() {
         return navn;
     }
 
-    public CPR getCpr()
-    {
+    public CPR getCpr() {
         return cpr;
     }
 
-    public int getTelNr()
-    {
+    public int getTelNr() {
         return telNr;
     }
 
-    public String getMail()
-    {
+    public String getMail() {
         return mail;
     }
 
+    @Override
+    public String toString() {
+        return "Navn: " + navn + "\n" +
+                "CPR: " + cpr + "\n" +
+                "Telefonnummer: " + telNr + "\n" +
+                "Mail: " + mail + "\n";
+    }
 }
