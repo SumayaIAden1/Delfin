@@ -11,9 +11,7 @@ public class Betalinger
     protected boolean restance;
     protected int medlemsKontingent;
 
-
-
-
+    
     public Betalinger(int medlemsKontingent)
     {
         this.medlemsKontingent = medlemsKontingent;

@@ -1,62 +1,62 @@
 LISTE OVER TRÆNERE
 
-Navn: Birgitte Petersen
-CPR: 140730-0594
-Telefonnummer: 16163543
-Mail: birgittepetersen@mail.com
-Diciplin: Rygcrawl
-
-Navn: Jonas Bæk
-CPR: 070194-7907
-Telefonnummer: 15954985
-Mail: jonasbæk@mail.com
-Diciplin: Brystsvømning
-
-Navn: Henrik Kristensen
-CPR: 230205-8163
-Telefonnummer: 39272559
-Mail: henrikkristensen@mail.com
-Diciplin: Butterfly
-
-Navn: Pia Møller
-CPR: 280375-5344
-Telefonnummer: 67837419
-Mail: piamøller@mail.com
-Diciplin: Svømning
-
-Navn: Birgitte Sørensen
-CPR: 051202-5646
-Telefonnummer: 36205953
-Mail: birgittesørensen@mail.com
-Diciplin: Svømning
-
-Navn: Magnus Hansen
-CPR: 220780-4179
-Telefonnummer: 12782907
-Mail: magnushansen@mail.com
-Diciplin: Rygcrawl
-
-Navn: Niels Petersen
-CPR: 020287-6961
-Telefonnummer: 69354726
-Mail: nielspetersen@mail.com
-Diciplin: Brystsvømning
-
-Navn: Niels Lauridsen
-CPR: 191161-5405
-Telefonnummer: 57461081
-Mail: nielslauridsen@mail.com
+Navn: Kasper Sørensen
+CPR: 021178-0575
+Telefonnummer: 51250009
+Mail: kaspersørensen@mail.com
 Diciplin: Freestyle
 
-Navn: Henrik Møller
-CPR: 211205-0035
-Telefonnummer: 53142741
-Mail: henrikmøller@mail.com
+Navn: Birgitte Thomsen
+CPR: 030486-8836
+Telefonnummer: 11020652
+Mail: birgittethomsen@mail.com
+Diciplin: Svømning
+
+Navn: Jonas Thomsen
+CPR: 220389-1917
+Telefonnummer: 71382847
+Mail: jonasthomsen@mail.com
+Diciplin: Butterfly
+
+Navn: Henrik Petersen
+CPR: 211251-2581
+Telefonnummer: 75170451
+Mail: henrikpetersen@mail.com
 Diciplin: Brystsvømning
 
-Navn: Niels Friis
-CPR: 050442-7673
-Telefonnummer: 49480712
-Mail: nielsfriis@mail.com
-Diciplin: Butterfly
+Navn: Lotte Møller
+CPR: 100646-5898
+Telefonnummer: 75093496
+Mail: lottemøller@mail.com
+Diciplin: Rygcrawl
+
+Navn: Jonas Sørensen
+CPR: 121240-9777
+Telefonnummer: 78114927
+Mail: jonassørensen@mail.com
+Diciplin: Freestyle
+
+Navn: Katrine Petersen
+CPR: 131085-2870
+Telefonnummer: 24962249
+Mail: katrinepetersen@mail.com
+Diciplin: Freestyle
+
+Navn: Lotte Jakobsen
+CPR: 080535-3690
+Telefonnummer: 34201610
+Mail: lottejakobsen@mail.com
+Diciplin: Freestyle
+
+Navn: Henrik Jakobsen
+CPR: 241113-0357
+Telefonnummer: 75286596
+Mail: henrikjakobsen@mail.com
+Diciplin: Rygcrawl
+
+Navn: Jonas Kristensen
+CPR: 021006-0833
+Telefonnummer: 27503687
+Mail: jonaskristensen@mail.com
+Diciplin: Svømning
 

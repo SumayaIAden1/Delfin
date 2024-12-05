@@ -40,6 +40,10 @@ public class Medlem extends Person
         }
     }
 
+    public LocalDate getOprettelsesDato()
+    {
+        return oprettelsesDato;
+    }
 
     public String getMedlemsType()
     {

@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e496389b-0db6-4faf-b9a7-cc7afb3a43e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TraenerOversigt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MedlemPersistens.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CPR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CPR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraenerPersistens.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Betalinger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Betalinger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Konkurrence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KonkurrenceOversigt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KonkurrenceResultat.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MedlemsOversigt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MedlemsOversigt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Restance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Restance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RestancePersistens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RestancePersistens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Medlem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Medlem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MedlemmerPersistens.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RestancePersistens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/RestancePersistens.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TraenerPersistens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraenerPersistens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TraenerOversigt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraenerOversigt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TraenerPersistens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraenerPersistens.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +94,8 @@
       <workItem from="1732746860180" duration="796000" />
       <workItem from="1732784620307" duration="5655000" />
       <workItem from="1733157184624" duration="1276000" />
-      <workItem from="1733217272645" duration="9365000" />
+      <workItem from="1733217272645" duration="10013000" />
+      <workItem from="1733400274051" duration="2182000" />
     </task>
     <servers />
   </component>
